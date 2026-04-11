@@ -1,0 +1,25 @@
+{
+  "name": "@librecode/provider-openai",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "OpenAI provider plugin for LibreCode (GPT, o-series, Codex)",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": ["dist", "src"],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@librecode/plugin": "^0.0.1"
+  },
+  "peerDependencies": {
+    "@ai-sdk/openai": ">=2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0"
+  }
+}

@@ -1,0 +1,24 @@
+{
+  "name": "@librecode/provider-bundle",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "Meta-package that installs all LibreCode community provider plugins",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": ["dist", "src"],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc"
+  },
+  "dependencies": {
+    "@librecode/plugin": "^0.0.1",
+    "@librecode/provider-anthropic": "workspace:*",
+    "@librecode/provider-openai": "workspace:*",
+    "@librecode/provider-openrouter": "workspace:*"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0"
+  }
+}

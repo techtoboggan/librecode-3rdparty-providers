@@ -1,0 +1,25 @@
+{
+  "name": "@librecode/provider-anthropic",
+  "version": "0.1.0",
+  "type": "module",
+  "license": "MIT",
+  "description": "Anthropic (Claude) provider plugin for LibreCode",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": ["dist", "src"],
+  "scripts": {
+    "typecheck": "tsc --noEmit",
+    "build": "tsc",
+    "test": "bun test"
+  },
+  "dependencies": {
+    "@librecode/plugin": "^0.0.1"
+  },
+  "peerDependencies": {
+    "@ai-sdk/anthropic": ">=2.0.0"
+  },
+  "devDependencies": {
+    "typescript": "^5.8.0"
+  }
+}
