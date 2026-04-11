@@ -13,7 +13,7 @@
     "build": "tsc"
   },
   "dependencies": {
-    "@librecode/plugin": "^0.0.1",
+    "@librecode/plugin": "^0.1.0",
     "@librecode/provider-anthropic": "workspace:*",
     "@librecode/provider-openai": "workspace:*",
     "@librecode/provider-openrouter": "workspace:*"

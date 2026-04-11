@@ -14,7 +14,7 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@librecode/plugin": "^0.0.1"
+    "@librecode/plugin": "^0.1.0"
   },
   "peerDependencies": {
     "@ai-sdk/openai": ">=2.0.0"
