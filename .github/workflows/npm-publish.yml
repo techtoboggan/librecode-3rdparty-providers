@@ -48,6 +48,7 @@ jobs:
           }
           const tag = process.env.GITHUB_REF_NAME || '';
           if (tag.startsWith('v')) pkg.version = tag.slice(1);
+          pkg.repository = { type: 'git', url: 'https://github.com/techtoboggan/librecode-3rdparty-providers.git' };
           require('fs').writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
           console.log('Prepared ' + pkg.name + '@' + pkg.version);
           "
@@ -103,6 +104,7 @@ jobs:
               pkg.dependencies[k] = '^' + version;
             }
           }
+          pkg.repository = { type: 'git', url: 'https://github.com/techtoboggan/librecode-3rdparty-providers.git' };
           require('fs').writeFileSync(pkgPath, JSON.stringify(pkg, null, 2));
           console.log('Prepared ' + pkg.name + '@' + pkg.version);
           "
