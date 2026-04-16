@@ -1,6 +1,6 @@
 {
   "name": "@librecode/provider-openrouter",
-  "version": "0.1.0",
+  "version": "1.0.0-preview.1",
   "type": "module",
   "license": "MIT",
   "description": "OpenRouter provider plugin for LibreCode",
@@ -14,7 +14,7 @@
     "test": "bun test"
   },
   "dependencies": {
-    "@librecode/plugin": "^0.1.0"
+    "@librecode/plugin": "^1.0.0-preview.1"
   },
   "peerDependencies": {
     "@openrouter/ai-sdk-provider": ">=1.0.0"
