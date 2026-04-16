@@ -54,7 +54,14 @@ jobs:
           "
 
       - name: Install dependencies
-        run: npm install
+        # @librecode/plugin may not be on npm yet if this fires before the main
+        # repo publish workflow completes. Retry up to 5 times (5 min total).
+        run: |
+          for i in 1 2 3 4 5; do
+            npm install && break
+            echo "Attempt $i failed, retrying in 60s..."
+            sleep 60
+          done
         working-directory: ${{ matrix.package.dir }}
 
       - name: Build
@@ -110,7 +117,12 @@ jobs:
           "
 
       - name: Install dependencies
-        run: npm install
+        run: |
+          for i in 1 2 3 4 5; do
+            npm install && break
+            echo "Attempt $i failed, retrying in 60s..."
+            sleep 60
+          done
         working-directory: packages/provider-bundle
 
       - name: Build
