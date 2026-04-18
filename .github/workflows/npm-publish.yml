@@ -26,10 +26,9 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "22"
-
-      - name: Upgrade npm to 11+ (OIDC trusted publishing requires 11.5.1+)
-        run: npm install -g npm@latest
+          # Pinned Node 24 LTS. Ships with npm 11.x, required for OIDC trusted
+          # publishing (npm ≥ 11.5.1). Node 22 ships npm 10 which predates OIDC.
+          node-version: "24.9.0"
 
       - name: Prepare for publish
         run: |
@@ -83,10 +82,9 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: "22"
-
-      - name: Upgrade npm to 11+ (OIDC trusted publishing requires 11.5.1+)
-        run: npm install -g npm@latest
+          # Pinned Node 24 LTS. Ships with npm 11.x, required for OIDC trusted
+          # publishing (npm ≥ 11.5.1). Node 22 ships npm 10 which predates OIDC.
+          node-version: "24.9.0"
 
       - name: Prepare for publish
         run: |
