@@ -68,11 +68,9 @@ jobs:
         run: npx tsc
         working-directory: ${{ matrix.package.dir }}
 
-      - name: Publish
+      - name: Publish (OIDC — no token)
         working-directory: ${{ matrix.package.dir }}
         run: npm publish --access public --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
 
   publish-bundle:
     name: Publish @librecode/provider-bundle
@@ -129,8 +127,6 @@ jobs:
         run: npx tsc
         working-directory: packages/provider-bundle
 
-      - name: Publish
+      - name: Publish (OIDC — no token)
         working-directory: packages/provider-bundle
         run: npm publish --access public --provenance
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
