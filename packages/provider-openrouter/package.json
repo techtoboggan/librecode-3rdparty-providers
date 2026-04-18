@@ -1,13 +1,16 @@
 {
   "name": "@librecode/provider-openrouter",
-  "version": "1.0.0-preview.1",
+  "version": "0.9.8",
   "type": "module",
   "license": "MIT",
   "description": "OpenRouter provider plugin for LibreCode",
   "exports": {
     ".": "./src/index.ts"
   },
-  "files": ["dist", "src"],
+  "files": [
+    "dist",
+    "src"
+  ],
   "scripts": {
     "typecheck": "tsc --noEmit",
     "build": "tsc",
