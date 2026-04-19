@@ -1,6 +1,6 @@
 {
   "name": "@librecode/provider-openai",
-  "version": "0.9.24",
+  "version": "0.9.25",
   "type": "module",
   "license": "MIT",
   "description": "OpenAI provider plugin for LibreCode (GPT, o-series, Codex)",
