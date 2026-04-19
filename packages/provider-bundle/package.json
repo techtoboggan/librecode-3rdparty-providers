@@ -1,6 +1,6 @@
 {
   "name": "@librecode/provider-bundle",
-  "version": "0.9.29",
+  "version": "0.9.30",
   "type": "module",
   "license": "MIT",
   "description": "Meta-package that installs all LibreCode community provider plugins",
