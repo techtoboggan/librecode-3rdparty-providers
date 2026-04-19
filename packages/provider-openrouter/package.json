@@ -1,6 +1,6 @@
 {
   "name": "@librecode/provider-openrouter",
-  "version": "0.9.17",
+  "version": "0.9.18",
   "type": "module",
   "license": "MIT",
   "description": "OpenRouter provider plugin for LibreCode",
