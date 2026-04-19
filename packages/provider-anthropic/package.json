@@ -1,6 +1,6 @@
 {
   "name": "@librecode/provider-anthropic",
-  "version": "0.9.21",
+  "version": "0.9.22",
   "type": "module",
   "license": "MIT",
   "description": "Anthropic (Claude) provider plugin for LibreCode",
